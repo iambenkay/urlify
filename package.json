@@ -1,15 +1,8 @@
 {
-  "name": "urlify",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "benkay <benjamin.node@gmail.com>",
-  "license": "MIT",
-  "repository": "https://github.com/iambenkay/urlify.git",
   "devDependencies": {
     "nodemon": "^1.19.4"
   },
   "scripts": {
-    "start": "./build.sh",
-    "dev": "nodemon"
+    "start": "nodemon"
   }
 }

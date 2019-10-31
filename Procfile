@@ -1,1 +1,1 @@
-web: ./build.sh
+web: bin/urlspace

@@ -1,3 +1,3 @@
 fuser -k 8000/tcp
-go build -o ./build/urlify || exit 1
-./build/urlify
+go build -o ./bin/urlspace || exit 1
+./bin/urlspace
