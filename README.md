@@ -8,7 +8,7 @@ Environment is linux
 git clone https://github.com/iambenkay/urlspace.git
 cd urlspace
 yarn
-npm start
+./build.sh
 ```
 
 ## HOW TO USE
