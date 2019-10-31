@@ -27,10 +27,7 @@ func main() {
 	}
 
 	app := echo.New()
-	app.Static("/static", "assets")
-	app.GET("/favicon.ico", func(context echo.Context) error {
-		return context.File("./assets/res/favicon.ico")
-	})
+
 	configure(app, session.DB(dbName))
 
 	app.Use(middleware.LoggerWithConfig(middleware.LoggerConfig{
