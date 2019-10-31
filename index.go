@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/labstack/echo"
@@ -37,5 +38,10 @@ func main() {
 	}))
 	app.Use(middleware.Recover())
 
-	app.Logger.Fatal(app.Start(":8000"))
+	var port string
+	if port = os.Getenv("PORT"); port == "" {
+		port = "3000"
+	}
+
+	app.Logger.Fatal(app.Start(fmt.Sprintf(":%s", port)))
 }
