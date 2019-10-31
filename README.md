@@ -7,8 +7,8 @@ Environment is linux
 ```
 git clone https://github.com/iambenkay/urlspace.git
 cd urlspace
-yarn
-./build.sh
+yarn add nodemon
+npx nodemon
 ```
 
 ## HOW TO USE
